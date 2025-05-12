@@ -86,7 +86,7 @@ ShopSphere allows users to browse products, view details, manage their shopping 
 
 ## 📂 Project Structure
 
-```
+```bash
 ShopSphere/
 ├─ public/                # Static assets
 ├─ src/
