@@ -1,44 +1,49 @@
-# ShopSphere
+# 🛍️ ShopSphere
 
-A modern, React-based e-commerce storefront built during ITI’s Python Full Stack Development (2025) — Lab 3. ShopSphere lets users browse products, view details, manage a shopping cart, and switch seamlessly between English, Arabic (RTL), and French.
-
----
-
-## 🚀 Features
-
-* **Product Catalog**
-  Fetches and displays products from the [DummyJSON API](https://dummyjson.com).
-* **Product Details & Cart**
-  View detailed product pages, choose quantities, and add items to cart.
-* **Cart Badge**
-  Navbar icon shows real-time total item count.
-* **Internationalization**
-  English, Arabic (RTL), and French support via **react-i18next**.
-* **Responsive Design**
-  Mobile-first layout powered by **React Bootstrap**.
+A modern, multi-language React-based e-commerce storefront built as part of the **ITI Python Full Stack Development Program – React Course (2025)**.
+ShopSphere allows users to browse products, view details, manage their shopping cart, and seamlessly switch between **English**, **Arabic (RTL)**, and **French**.
 
 ---
 
-## 🛠 Tech Stack
+## ✨ Features
+
+* 🔍 **Product Catalog**
+  Displays products fetched from the [DummyJSON API](https://dummyjson.com).
+
+* 📄 **Product Details & Cart**
+  Users can view individual product details, select quantity, and manage items in the cart.
+
+* 🛒 **Real-Time Cart Badge**
+  The navbar cart icon updates with the current item count dynamically.
+
+* 🌍 **Internationalization (i18n)**
+  Supports English, Arabic (RTL), and French using **react-i18next**.
+
+* 📱 **Responsive Design**
+  Fully responsive, mobile-first layout powered by **React Bootstrap**.
+
+---
+
+## 🧰 Tech Stack
 
 * **Frontend**: React + Vite
-* **Styling & Layout**: React Bootstrap
-* **State Management**: Redux Toolkit
+* **Styling & UI**: React Bootstrap
 * **Routing**: react-router-dom
-* **i18n**: react-i18next
+* **State Management**: Redux Toolkit
+* **Internationalization**: react-i18next
 * **API**: DummyJSON ([https://dummyjson.com](https://dummyjson.com))
 * **Deployment**: Vercel
 
 ---
 
-## ⚙️ Prerequisites
+## ⚙️ Requirements
 
 * **Node.js** v16 or higher
 * **npm** v8 or higher
 
 ---
 
-## 🔧 Installation & Development
+## 🛠️ Getting Started
 
 1. **Clone the repository**
 
@@ -53,68 +58,92 @@ A modern, React-based e-commerce storefront built during ITI’s Python Full Sta
    npm install
    ```
 
-3. **Start the development server**
+3. **Run development server**
 
    ```bash
    npm run dev
    ```
 
 4. **Open in browser**
-   Navigate to `http://localhost:5173`
+   Visit: `http://localhost:5173`
 
 ---
 
-## 🚢 Deployment on Vercel
+## 🚀 Deployment (Vercel)
 
-1. Push your fork to GitHub.
-2. Sign up or log in to [Vercel](https://vercel.com).
-3. **Import Project**
+1. Push your forked version to GitHub.
+2. Go to [Vercel](https://vercel.com) and sign in.
+3. Click **"Import Project"** and select your repository.
+4. Set the following build settings:
 
-   * Framework Preset: **Vite**
-   * Install Command: `npm install`
-   * Build Command: `npm run build`
-   * Output Directory: `dist`
-4. Click **Deploy** and grab your live URL!
+   * **Framework Preset**: Vite
+   * **Install Command**: `npm install`
+   * **Build Command**: `npm run build`
+   * **Output Directory**: `dist`
+5. Click **Deploy** — your app will be live!
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```
 ShopSphere/
 ├─ public/                # Static assets
 ├─ src/
-│  ├─ components/         # React components (Navbar, ProductsList, etc.)
+│  ├─ components/         # Reusable components (Navbar, ProductCard, etc.)
 │  ├─ features/           # Redux slices (cart, products)
 │  ├─ hooks/              # Custom React hooks
-│  ├─ locales/            # Translation files (en, ar, fr)
-│  ├─ pages/              # Route-based pages
-│  ├─ store/              # Redux Toolkit store configuration
-│  ├─ App.jsx             # Root component + router
-│  └─ i18n.js             # i18next setup
-├─ .env                   # VITE_API_BASE_URL=https://dummyjson.com
+│  ├─ locales/            # Translations (en, ar, fr)
+│  ├─ pages/              # Route components (Home, Cart, ProductDetails)
+│  ├─ store/              # Redux store configuration
+│  ├─ App.jsx             # App root with routing
+│  └─ i18n.js             # i18next configuration
+├─ images/                # 📸 Project screenshots (pic1.png → pic7.png)
+├─ .env                   # Environment variable for API base URL
 ├─ package.json
 └─ vite.config.js
 ```
 
 ---
 
-## 🔍 Notes
+## 📌 Notes
 
-* **Environment Variable**
-  `VITE_API_BASE_URL` is preconfigured for DummyJSON in `.env`.
-* **Cart State**
-  Managed with Redux Toolkit: add/remove items, adjust quantities, and persist badge count.
+* **Environment Variables**
+  The `.env` file contains:
+
+  ```env
+  VITE_API_BASE_URL=https://dummyjson.com
+  ```
+
+* **Redux-Powered Cart**
+  Add, remove, and update item quantities with centralized state using Redux Toolkit.
+
 * **RTL Support**
-  Arabic layout flips via CSS when locale is set to `ar`.
+  When Arabic is selected, the layout automatically adjusts to right-to-left orientation using CSS.
+
+* **Project Images**
+  Screenshots are located in the `/images` folder and can be used for documentation or showcasing.
+
+---
+
+## 📸 Project Images
+
+[![Pic 1](./images/pic1.png)](./images/pic1.png)
+[![Pic 2](./images/pic2.png)](./images/pic2.png)
+[![Pic 3](./images/pic3.png)](./images/pic3.png)
+[![Pic 4](./images/pic4.png)](./images/pic4.png)
+[![Pic 5](./images/pic5.png)](./images/pic5.png)
+[![Pic 6](./images/pic6.png)](./images/pic6.png)
+[![Pic 7](./images/pic7.png)](./images/pic7.png)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT License](./LICENSE).
+This project was created for educational purposes as part of the **ITI Full Stack Development (React Course) (2025)**
+No official license is applied.
 
 ---
 
-> **Enjoy exploring ShopSphere!**
-> Feel free to open issues or submit pull requests.
+> Made with ❤️ during the ITI Full Stack journey.
+> Contributions and feedback are welcome!
